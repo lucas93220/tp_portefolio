@@ -1,6 +1,8 @@
-
-/*theme*/
-/*palette*/
+/* police d ecriture */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+* {
+    font-family: 'Merriweather', serif;
+}
 
 :root{
     --color-default: #5298c6;
@@ -14,41 +16,80 @@
 /*variable appeler*/
 header{
     background-color: var(--color-default);
-    line-height: 1.0rem;
+    line-height: .6rem;
     padding: .5rem;
+    box-shadow: 0 0 25px #646161, inset 0 0 1px #5298c6;
+    
 }
 header h1, section h2{
     color: var(--color-header-text);
     text-align: center;
-   
-}
-nav ul{
-    text-align: center;
-    margin-bottom: 2rem;
+    
+    
 }
 
+/* barre de navigation */
+nav ul {
+
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #646161, inset 0 0 1px #5298c9;
+
+  }
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  text-transform:uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+/* couleur surbrillance de la barre de nav */
+nav ul li:hover a{
+    background-color: #222;
+    color : #fff;
+}
+
+/*le corps principal */
 main{
     max-width: 80.0rem;
-    border: solid .1rem var(--color-default);
+    border: solid .3rem var(--color-header-text);
     padding: 1.0rem;
     margin: 5.0rem auto 1.0rem;
+    box-shadow: 0 0 25px #646161, inset 0 0 1px #5298c6;
+   
 }
-figure > img{
-    display: block;
-    width: 100%;
-    margin: 5.0rem auto 1.0rem;
-    box-shadow: 0 0 1.0rem r#5298c6;
+div {
+    text-align: center;   
 }
-/*la suite*/
 
-section h2, section figure figcaption h3 {
+
+/*grands titres*/
+
+section h2 {
     background-color: var(--color-primary);
+    box-shadow: 0 0 25px #646161, inset 0 0 1px #5298c9;
+    color : var(--color-header-text);
+    line-height: 4.5rem;
+    padding: .5rem;
+    font-size: xx-large;
+    text-align: center;
+
+}
+/* sous titres */
+section h3{
+    background-color: transparent;
+    border: solid .1rem var(--color-header-text);
     color : var(--color-header-text);
     line-height: 4.5rem;
     padding: .5rem;
     font-size: x-large;
-    text-align: center;
-
 }
 section p{
     line-height: 2.6rem;
@@ -68,6 +109,7 @@ main section:last-child h2{ /*dernier element*/
 }
 main section:nth-child(2) h2{
     background-color: var(--color-succes);
+
 }
 main section:nth-of-type(3) h2 {
     background-color:var(--color-warning);
@@ -79,8 +121,10 @@ section figure figcaption h3{
 }
 footer *{
     text-align: center;
-    color: #999;
+    color: rgb(0, 0, 0);
 }
+
+
 /*respomsive*/
 @media  screen and (max-width: 80.0rem) {
     main {
@@ -108,5 +152,4 @@ footer *{
         font-size: xx-large;
         
     }
-    
 }

@@ -15,33 +15,34 @@
 
 header{
     background-color: var(--color-default);
-    line-height: .1rem;
+    line-height: .5rem;
     padding: .5rem;
     box-shadow: 0 0 25px #000000;
     
 }
+/*Titre principal*/
 header h1{
-    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 5.0rem;
     color: var(--color-header-text);
-    position: relative;
-	left: 650px;
-	bottom: 40px;
+    
 
 }
-
+/*Image du titre*/
 header img{
- position: relative;
-     top: 20px;
-    left: 520px;
-  border-radius: 50%;  
+ position: absolute;
+ top: 1.2rem;
+ left: 40.0rem;
+  
   width: 100px;
   display: block;
  text-align: left;
- border: solid .1rem var(--color-header-text);
 }
 
 /* barre de navigation */
 nav ul {
+    
     font-weight: bold;
     text-align: center;
     background-color: #9174f3;
@@ -59,6 +60,7 @@ nav ul li a {
   font-size: 18px;
   text-decoration: none;
   display: block;
+  transition: all 500ms ease-in-out;
 }
 
 /* couleur surbrillance de la barre de nav */
@@ -70,10 +72,9 @@ nav ul li:hover a{
 /*le corps principal */
 
 body{
-    
-    color:black;
-    background-color:white;
     background-image:url(https://www.easytutoriel.com/wp-content/uploads/2021/09/fond-d-ecran-anime-windows-11-10-tutoriel-facile.jpg);
+    
+    
 }
 
 main{
@@ -86,7 +87,7 @@ main{
 }
 /* placement et dimensions images*/
 conteneur img{ 
-  width: 150px;
+  width: 120px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -103,9 +104,10 @@ section h2 {
     color : var(--color-header-text);
     line-height: 4.5rem;
     padding: .5rem;
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
     text-align: center;
+    
 
 }
 /* sous titres */
@@ -138,10 +140,14 @@ footer *{
         margin : .1rem;
     }
     header h1{
-        background-color: #3a3355;
+        
         font-size: x-large;
     }
-
+header img{
+    display: block;
+    position: static;
+    margin: 0 auto;
+}
     footer {
         min-height: 20vh; /*unite de mesure 1 vingtieme de l'ecran*/
         display: grid;
@@ -150,8 +156,8 @@ footer *{
 }
 @media screen and (orientation:landscape) { /*format paysage*/
     header h1{
-        background-color: #3a3355;
-        font-size: xx-large;
+       
+        font-size: x-large;
         
     }
 }

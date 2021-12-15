@@ -4,37 +4,48 @@
     font-family: 'Merriweather', serif;
 }
 
+/*couleurs page*/
 :root{
-    --color-default: #5298c6;
-    --color-header-text: rgb(0, 0, 0);
-    --color-primary: #5298c6;
-    --color-alert: #5298c6;
-    --color-succes: #5298c6;
-    --color-warning: #5298c6;
+    --color-default: #3a3355;
+    --color-header-text: rgb(255, 255, 255);
+    --color-primary:#000000;
+   
 
 }
-/*variable appeler*/
+
 header{
     background-color: var(--color-default);
-    line-height: .6rem;
+    line-height: .1rem;
     padding: .5rem;
-    box-shadow: 0 0 25px #646161, inset 0 0 1px #5298c6;
+    box-shadow: 0 0 25px #000000;
     
 }
-header h1, section h2{
+header h1{
+    font-weight: bold;
     color: var(--color-header-text);
-    text-align: center;
-    
-    
+    position: relative;
+	left: 650px;
+	bottom: 40px;
+
+}
+
+header img{
+ position: relative;
+     top: 20px;
+    left: 520px;
+  border-radius: 50%;  
+  width: 100px;
+  display: block;
+ text-align: left;
+ border: solid .1rem var(--color-header-text);
 }
 
 /* barre de navigation */
 nav ul {
-
     font-weight: bold;
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 0 25px #646161, inset 0 0 1px #5298c9;
+    background-color: #9174f3;
+    box-shadow: 0 0 25px #000000;
 
   }
 nav ul li {
@@ -52,76 +63,72 @@ nav ul li a {
 
 /* couleur surbrillance de la barre de nav */
 nav ul li:hover a{
-    background-color: #222;
+    background-color: #231b35;
     color : #fff;
 }
 
 /*le corps principal */
-main{
-    max-width: 80.0rem;
-    border: solid .3rem var(--color-header-text);
-    padding: 1.0rem;
-    margin: 5.0rem auto 1.0rem;
-    box-shadow: 0 0 25px #646161, inset 0 0 1px #5298c6;
-   
-}
-div {
-    text-align: center;   
+
+body{
+    
+    color:black;
+    background-color:white;
+    background-image:url(https://www.easytutoriel.com/wp-content/uploads/2021/09/fond-d-ecran-anime-windows-11-10-tutoriel-facile.jpg);
 }
 
+main{
+    background-color: #ffffff;
+    max-width: 80.0rem;
+    padding: 1.0rem;
+    margin: 5.0rem auto 1.0rem;
+    box-shadow: 0 0 25px #000000;
+   
+}
+/* placement et dimensions images*/
+conteneur img{ 
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+conteneur {
+    display: flex;
+    justify-content: center;
+}
 
 /*grands titres*/
 
 section h2 {
-    background-color: var(--color-primary);
-    box-shadow: 0 0 25px #646161, inset 0 0 1px #5298c9;
+    background-color: var(--color-default);
+    box-shadow: 0 0 25px #000000;
     color : var(--color-header-text);
     line-height: 4.5rem;
     padding: .5rem;
     font-size: xx-large;
+    font-weight: bold;
     text-align: center;
 
 }
 /* sous titres */
 section h3{
     background-color: transparent;
-    border: solid .1rem var(--color-header-text);
-    color : var(--color-header-text);
+    border: solid .1rem var(--color-default);
+    color : var(--color-primary);
     line-height: 4.5rem;
     padding: .5rem;
     font-size: x-large;
 }
+
+/*espaces entre les lignes */
 section p{
-    line-height: 2.6rem;
+    line-height: 2.0rem;
 }
 
-
-/*placer les icones*/
-
-
-main section + section h2{ /* a partir du premier element*/
-   background-color: #5298c6;
-
-}
-main section:last-child h2{ /*dernier element*/
-    background-color: #5298c6;
-    color:#222;
-}
-main section:nth-child(2) h2{
-    background-color: var(--color-succes);
-
-}
-main section:nth-of-type(3) h2 {
-    background-color:var(--color-warning);
-    color: #222;
-}
-section figure figcaption h3{
-   background-color: #5298c6;
-   color: #222;
-}
+/*signature au bas de page*/
 footer *{
     text-align: center;
-    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
 }
 
 
@@ -131,15 +138,10 @@ footer *{
         margin : .1rem;
     }
     header h1{
-        background-color: #5298c6;
+        background-color: #3a3355;
         font-size: x-large;
     }
-    section h2, section figure figcaption h3 {
-        font-size: large;
-    }
-    section figure figcaption p {
-        text-align: justify;
-    }
+
     footer {
         min-height: 20vh; /*unite de mesure 1 vingtieme de l'ecran*/
         display: grid;
@@ -148,7 +150,7 @@ footer *{
 }
 @media screen and (orientation:landscape) { /*format paysage*/
     header h1{
-        background-color: #5298c6;
+        background-color: #3a3355;
         font-size: xx-large;
         
     }

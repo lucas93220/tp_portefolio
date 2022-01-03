@@ -1,9 +1,9 @@
 # Projet infinity scroll
-[voir la page](file:///C:/Users/33770/Desktop/COURS%20ITIC%20PARIS/Cours/tp_portefolio/index.html#expertise)
+[voir la page](https://lucas93220.github.io/tp_portefolio/)
 
 •••Bonjour voici le 1er projet de developpement que j'ai realise a l'ecole ITIC Paris, sous la direction de Mr Militello.
 C'est un portefolio qui a ete fait en Janvier 2022.
-Le lien ci-dessous :
+Mon github ci-dessous :
 https://github.com/lucas93220/tp_portefolio
 
 <!DOCTYPE html>

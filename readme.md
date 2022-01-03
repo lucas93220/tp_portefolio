@@ -4,7 +4,9 @@
 •••Bonjour voici le 1er projet de developpement que j'ai realise a l'ecole ITIC Paris, sous la direction de Mr Militello.
 C'est un portefolio qui a ete fait en Janvier 2022.
 Mon github ci-dessous :
-https://github.com/lucas93220/tp_portefolio
+https://github.com/lucas93220
+
+# HTML
 
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">

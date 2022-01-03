@@ -41,11 +41,12 @@ header img{
 
 /* barre de navigation */
 nav ul {
-    
+
     font-weight: bold;
     text-align: center;
     background-color: #9174f3;
     box-shadow: 0 0 25px #000000;
+    border: solid .2rem var(--color-primary);
 
   }
 nav ul li {
@@ -64,7 +65,7 @@ nav ul li a {
 
 /* couleur surbrillance de la barre de nav */
 nav ul li:hover a{
-    background-color: #231b35;
+    background-color: #000000;
     color : #fff;
 }
 
@@ -73,14 +74,15 @@ nav ul li:hover a{
 body{
     background-image:url(https://www.easytutoriel.com/wp-content/uploads/2021/09/fond-d-ecran-anime-windows-11-10-tutoriel-facile.jpg);
     
-    
 }
 /* tout le carre blanc */
 main{
     background-color: #ffffff;
-    max-width: 80.0rem;
     padding: 1.0rem;
     box-shadow: 0 0 25px #000000;
+    
+
+    
 
    
 }
@@ -106,6 +108,7 @@ section h2 {
     font-size: xx-large;
     font-weight: bold;
     text-align: center;
+    
    
     
 
@@ -113,7 +116,7 @@ section h2 {
 /* sous titres */
 section h3{
     background-color: transparent;
-    border: solid .2rem var(--color-default);
+    border: solid .2rem var(--color-primary);
     color : var(--color-primary);
     line-height: 4.5rem;
     padding: .5rem;

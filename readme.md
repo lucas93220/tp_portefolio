@@ -1,8 +1,12 @@
-# Projet infinity scroll
+# Auteur
+Je suis Lucas Lopez, j'ai 22 ans et je suis etudiant en BTS SIO a l'ecole ITIC PARIS.
+
+
+# Projet Portefolio
 [voir la page](https://lucas93220.github.io/tp_portefolio/)
 
-Bonjour voici le 1er projet de developpement que j'ai realise a l'ecole ITIC Paris, sous la direction de Mr Militello.
-C'est un portefolio qui a ete fait en Janvier 2022.
+Bonjour voici le 1er projet de developpement que j'ai realise sous la direction de Mr Militello.
+Ce portefolio a ete fait en Janvier 2022.
 Mon github ci-dessous :
 https://github.com/lucas93220
 
@@ -163,4 +167,5 @@ https://github.com/lucas93220
 </body>
 </html>
 ```
-Lors de ce projet j'ai utilise le language HTML 5 et le CSS.
+# Languages
+J'ai utlise HTML 5 et le CSS.
